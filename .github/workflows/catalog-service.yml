@@ -2,7 +2,7 @@ name: Catalog Service
 on:
   push:
     paths:
-      - catalog-service/**
+      - secure-microservices/catalog-service/**
     branches:
       - '**'
 
@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./secure-microservices\catalog-service
+      working-directory: ./secure-microservices/catalog-service
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
